@@ -156,17 +156,27 @@ footer{border-top:0.5px solid var(--border);padding:28px 48px;display:flex;justi
 .reveal.visible{opacity:1;transform:translateY(0);}
 
 @media(max-width:900px){
-  nav{padding:14px 20px;}
-  .nav-links{gap:14px;}
-  .hero{grid-template-columns:1fr;padding:100px 24px 60px;}
-  .hero-photo{display:none;}
+  nav{padding:14px 20px;flex-wrap:wrap;gap:10px;}
+  .nav-links{display:none;}
+  .lang-switcher{margin-left:auto;}
+  .hero{grid-template-columns:1fr;padding:100px 20px 60px;text-align:center;}
+  .hero-photo{display:flex;justify-content:center;margin-top:36px;}
+  .photo-frame{width:220px;height:290px;}
+  .hero-eyebrow{justify-content:center;}
+  .hero-sub{margin:0 auto 36px;border-left:none;padding-left:0;border-top:2px solid var(--accent2);padding-top:14px;}
+  .hero-tags{justify-content:center;}
+  .hero-cta{justify-content:center;}
   .about-grid,.projects-grid,.skills-grid{grid-template-columns:1fr;}
-  section{padding:70px 24px;}
-  .edu-card{grid-template-columns:1fr;}
+  section{padding:60px 20px;}
+  .edu-card{grid-template-columns:1fr;padding:24px;}
   .edu-year{display:none;}
   footer{flex-direction:column;gap:8px;text-align:center;padding:24px;}
   .ach-item-header,.ach-group-header{padding:14px 18px;}
-  .ach-item-detail.open,.ach-item.open .ach-item-detail{padding:0 18px 16px;}
+  .ach-item.open .ach-item-detail{padding:0 18px 16px;}
+  .contact-links{flex-direction:column;}
+  .contact-link{width:100%;justify-content:flex-start;}
+  .hero h1{font-size:52px;}
+}
 }
 </style>
 </head>
